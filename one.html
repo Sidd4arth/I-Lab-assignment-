@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://img.freepik.com/premium-photo/empty-chairs-tables-night_1048944-11745610.jpg');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        nav button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #280f0c61;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        
+
+        section {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            margin: 20px;
+            border-radius: 8px;
+        }
+
+        h2, h3, h4 {
+            margin-top: 0;
+        }
+        
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border: 1px solid rgba(0, 0, 0, 0);
+            vertical-align: top;
+        }
+        th {
+            background-color: #360b0b00;
+        }
+        h4, h5, h6 {
+    
+            text-align: center;
+        }
+        h2, h3{
+            font-size: 2em;
+            text-align: center;
+        }
+        h2 {
+            margin-bottom:50px;
+        }
+        button:hover {
+            background-color: #0b0c0b;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to The Roundtable Feast</h1>
+        <p>Delicious meals and excellent service await you!</p>
+    </header>
+
+    <!-- Navigation Buttons -->
+    <nav>
+        <button onclick="document.getElementById('menu').scrollIntoView()">View Menu</button>
+        <button onclick="document.getElementById('contact').scrollIntoView()">Contact Information</button>
+        <button onclick="document.getElementById('hours').scrollIntoView()">Hours of Operation</button>
+        <button onclick="document.getElementById('about').scrollIntoView()">About Us</button>
+    </nav>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Our Menu</h2>
+        
+        <!-- Desserts and Beverages Section -->
+        <h4>Desserts / Beverages</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Price (INR)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Rasgulla</td>
+                    <td>400 RS</td>
+                </tr>
+                <tr>
+                    <td>Bengali Methi</td>
+                    <td>600 RS</td>
+                </tr>
+                <tr>
+                    <td>Gulab Jamun</td>
+                    <td>400 RS</td>
+                </tr>
+                <tr>
+                    <td>Kaju Katli</td>
+                    <td>250 RS</td>
+                </tr>
+                <tr>
+                    <td>Mawa Barfi</td>
+                    <td>200 RS</td>
+                </tr>
+                <tr>
+                    <td>Ice Cream</td>
+                    <td>70 RS</td>
+                </tr>
+                <tr>
+                    <td>Milk Shake</td>
+                    <td>30 RS</td>
+                </tr>
+                <tr>
+                    <td>Lassi</td>
+                    <td>40 RS</td>
+                </tr>
+                <tr>
+                    <td>Iced Tea</td>
+                    <td>25 RS</td>
+                </tr>
+                <tr>
+                    <td>Coffee / Tea</td>
+                    <td>20 RS</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Appetizers Section -->
+        <h4>Appetizers</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Price (INR)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Fruit Salad</td>
+                    <td>80 RS</td>
+                </tr>
+                <tr>
+                    <td>Cocktails</td>
+                    <td>100 RS</td>
+                </tr>
+                <tr>
+                    <td>French Fries</td>
+                    <td>90 RS</td>
+                </tr>
+                <tr>
+                    <td>Masala Papad</td>
+                    <td>50 RS</td>
+                </tr>
+                <tr>
+                    <td>Manchurian</td>
+                    <td>120 RS</td>
+                </tr>
+                <tr>
+                    <td>Gobi Manchurian</td>
+                    <td>130 RS</td>
+                </tr>
+                <tr>
+                    <td>Noodles</td>
+                    <td>110 RS</td>
+                </tr>
+                <tr>
+                    <td>Sizzler</td>
+                    <td>150 RS</td>
+                </tr>
+                <tr>
+                    <td>Garlic Bread</td>
+                    <td>70 RS</td>
+                </tr>
+                <tr>
+                    <td>Veg Roll</td>
+                    <td>90 RS</td>
+                </tr>
+                <tr>
+                    <td>Paneer Tikka</td>
+                    <td>140 RS</td>
+                </tr>
+                <tr>
+                    <td>Chilli Paneer</td>
+                    <td>150 RS</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Main Course Section -->
+        <h3>Main Course</h3>
+
+        <!-- Breads Subsection -->
+        <h4>Breads</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Price (INR)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Plain Roti</td>
+                    <td>10 RS</td>
+                </tr>
+                <tr>
+                    <td>Tandoori Roti</td>
+                    <td>15 RS</td>
+                </tr>
+                <tr>
+                    <td>Naan</td>
+                    <td>25 RS</td>
+                </tr>
+                <tr>
+                    <td>Kulcha</td>
+                    <td>30 RS</td>
+                </tr>
+                <tr>
+                    <td>Paratha</td>
+                    <td>20 RS</td>
+                </tr>
+                <tr>
+                    <td>Lachha Paratha</td>
+                    <td>40 RS</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Curry / Vegetables Subsection -->
+        <h4>Curry / Vegetables</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Price (INR)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mix Veg</td>
+                    <td>120 RS</td>
+                </tr>
+                <tr>
+                    <td>Chana Masala</td>
+                    <td>110 RS</td>
+                </tr>
+                <tr>
+                    <td>Shahi Paneer</td>
+                    <td>160 RS</td>
+                </tr>
+                <tr>
+                    <td>Palak Paneer</td>
+                    <td>150 RS</td>
+                </tr>
+                <tr>
+                    <td>Kaju Curry</td>
+                    <td>180 RS</td>
+                </tr>
+                <tr>
+                    <td>Matar Paneer</td>
+                    <td>140 RS</td>
+                </tr>
+                <tr>
+                    <td>Paneer Lababdar</td>
+                    <td>170 RS</td>
+                </tr>
+                <tr>
+                    <td>Kadai Paneer</td>
+                    <td>160 RS</td>
+                </tr>
+                <tr>
+                    <td>Paneer Makhani</td>
+                    <td>180 RS</td>
+                </tr>
+                <tr>
+                    <td>Punjabi Dum Aloo</td>
+                    <td>130 RS</td>
+                </tr>
+                <tr>
+                    <td>Paneer Kofta Curry</td>
+                    <td>170 RS</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <p>Address: 1234 Food Street, Indore, India</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Email: info@theroundtablefeast.com</p>
+    </section>
+
+    <!-- Hours of Operation Section -->
+    <section id="hours">
+        <h2>Hours of Operation</h2>
+        <p>Monday - Friday: 10 AM - 10 PM</p>
+        <p>Saturday - Sunday: 11 AM - 11 PM</p>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At The Roundtable Feast, we are dedicated to providing high-quality meals that satisfy both your taste buds and your soul. Our team of chefs uses only the freshest ingredients to craft dishes that blend traditional flavors with modern techniques.</p>
+    </section>
+
+</body>
+</html>
