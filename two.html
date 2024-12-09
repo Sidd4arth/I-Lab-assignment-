@@ -1,0 +1,126 @@
+<!--Web page for a travel agency, that showcase their latest vacation packages, including images, price and discription-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travel Agency - Vacation Packages</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .package-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .package {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .package:hover {
+            transform: scale(1.05);
+        }
+        .package img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        .package-details {
+            padding: 20px;
+        }
+        .package-details h3 {
+            margin: 0 0 10px;
+            color: #333;
+        }
+        .package-details p {
+            color: #555;
+        }
+        .price {
+            font-size: 1.2em;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        .book-now {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .book-now:hover {
+            background-color: #2a632c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Firefly Expeditions </h1>
+        <p>Explore amazing destinations with our best deals</p>
+    </header>
+
+    <div class="package-container">
+        <!-- Vacation Package 1 -->
+        <div class="package">
+            <img src="https://dharamsalatreks.com/wp-content/uploads/2020/03/83D0ECC9-9332-48B6-B424-3DF8FF504384_1_201_a.jpeg" alt="Beach Vacation">
+            <div class="package-details">
+                <h3>Triund Trek</h3>
+                <p>Relax on golden sands and enjoy the turquoise waters. Ideal for beach lovers.</p>
+                <p class="price">$499 per person</p>
+                <a href="#" class="book-now">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Vacation Package 2 -->
+        <div class="package">
+            <img src="https://dwq3yv87q1b43.cloudfront.net/public/blogs/fit-in/1200x675/Blog_20240831-1026773478-1725092769.jpg" alt="Mountain Adventure">
+            <div class="package-details">
+                <h3>Kedarkantha Trek</h3>
+                <p>Hike through scenic trails, enjoy the crisp air, and explore the mountain peaks.</p>
+                <p class="price">$799 per person</p>
+                <a href="#" class="book-now">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Vacation Package 3 -->
+        <div class="package">
+            <img src="https://static.toiimg.com/thumb/110581481/Valley-of-Flowers.jpg?width=1200&height=900" alt="Mountain Adventure" alt="City Tour">
+            <div class="package-details">
+                <h3>Flower of valley Trek</h3>
+                <p>Discover the best of the city with guided tours, local experiences, and fine dining.</p>
+                <p class="price">$599 per person</p>
+                <a href="#" class="book-now">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Vacation Package 4 -->
+        <div class="package">
+            <img src="https://static.toiimg.com/thumb/103957517/chandra.jpg?width=1200&height=900" alt="Tropical Island">
+            <div class="package-details">
+
+                <h3>Chandrashila Trek</h3>
+                <p>Escape to a tropical paradise with all-inclusive resorts and guided island tours.</p>
+                <p class="price">$699 per person</p>
+                <a href="#" class="book-now">Book Now</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
