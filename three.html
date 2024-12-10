@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website</title>
+    <style>
+        
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+header {
+    background-color: #232f3e;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 2rem;
+}
+
+.sidebar h3 {
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 1rem;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #232f3e;
+    font-size: 16px;
+}
+
+.main-content {
+    width: 75%;
+}
+
+.main-content h2 {
+    font-size: 24px;
+    color: #232f3e;
+    margin-bottom: 1.5rem;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 200px;
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    margin: 1rem 0;
+    color: #232f3e;
+}
+
+.product-price {
+    font-size: 18px;
+    color: #b12704;
+    font-weight: bold;
+}
+
+.product-price .old-price {
+    text-decoration: line-through;
+    color: #777;
+    margin-left: 0.5rem;
+    font-weight: normal;
+}
+
+.add-to-cart {
+    padding: 0.5rem 1rem;
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 14px;
+}
+
+.add-to-cart:hover {
+    background-color: #f90;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #232f3e;
+    color: #fff;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My E-commerce Store</h1>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#">Groceries</a></li>
+                <li><a href="#">Clothes</a></li>
+                <li><a href="#">Electronics</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <h2>Products on Sale</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSlIAHiFYAJUjrmUq0qwD_URjUewXIFO72yif-ySGhrFeotcDlZS73Qt7nbGydR4XOyOboDkaVWWCETuKIPnpa9AOVkmqpXmnbM9TGK02aPLpDDcOt1mVt93g&usqp=CAE" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p class="product-price">$1,350 <span class="old-price">$1600</span></p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSG-TUkm0BVzCk7-nQJqtOjC09YM2JZEgTd6kLVbEi44mGxYWOnE_h-M2fU5MbjF2aOJdRats_yI1xE41oU8AgAqr1QAkXOhQp7E-tTp4C46lwyaxha3A_U&usqp=CAE" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p class="product-price">$387.74 <span class="old-price">$399</span></p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQGk2q2YFnMFVM_b_RjPLoZxmawUcW8NwzGdcHuiYJGkSJbjwWZCqJQpoSCZT7xOl_K7Hbkx2fvAywVwjdr2SOmyM6Aqh9bWIziVF6xIUrBpSfjKFrDoTfP&usqp=CAE" alt="Product 3">
+                    <h3>Product 3</h3>
+                    <p class="product-price">$14.14 <span class="old-price">$15</span></p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQi6Z4G40Q67tAzNfnLbjzUVVxqju_ka_OVEj_sKRSYc9K9D77sMZRlt_ECVF2j41317jzF2nm_lVMNIcucST0Occv3hCJV4ANaTM_qiof6NEnABKjuAoDoUGE&usqp=CAE" alt="Product 4">
+                    <h3>Product 4</h3>
+                    <p class="product-price">$85 <span class="old-price">$89.57</span></p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My E-commerce Store</p>
+    </footer>
+</body>
+</html>
